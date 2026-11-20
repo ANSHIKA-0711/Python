@@ -1,0 +1,8 @@
+def square(number):
+    return number * number
+
+num = int(input("Enter a number: 6"))
+
+result = square(num)
+
+print("square is:", result)

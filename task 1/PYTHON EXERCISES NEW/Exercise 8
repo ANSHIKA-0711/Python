@@ -1,0 +1,5 @@
+numbers = {10, 20, 30, 20, 40, 10, 50}
+
+print("Original numbers:", numbers)
+
+print("Total unique numbers:", len(numbers))

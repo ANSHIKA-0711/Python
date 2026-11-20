@@ -1,0 +1,9 @@
+number = int(input("Enter a number:5 "))
+
+total = 0
+i = 0
+
+while i <= number:
+    total = total + i
+    i = i + 1
+print("Total sum:", total)

@@ -1,0 +1,10 @@
+name = "Anshika"
+age = 25
+role = "IT Employee"
+language = "Python"
+
+print("Employee Details")
+print("Name:", name)
+print("Age:", age)
+print("Role:", role)
+print("Learning:", language)
