@@ -1,0 +1,24 @@
+
+class Student:
+    
+    def display_details(self):
+        
+        print("Name:", self.name)
+        print("Age:", self.age)
+        print("Course:", self.course)
+
+
+
+student1 = Student()
+student1.name = "Anshika"
+student1.age = 25
+student1.course = "Python"
+
+student2 = Student()
+student2.name = "Sandya Rani"
+student2.age = 23
+student2.course = "Java"
+
+student1.display_details()
+print("---")
+student2.display_details()

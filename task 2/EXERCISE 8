@@ -1,0 +1,57 @@
+
+class HospitalStaff:
+
+    def __init__(self, name, staff_id):
+        self.name = name
+        self.staff_id = staff_id
+
+    def display_details(self):
+        print("Staff Name:", self.name)
+        print("Staff ID:", self.staff_id)
+
+
+class Doctor(HospitalStaff):
+
+    def __init__(self, name, staff_id, specialization):
+        super().__init__(name, staff_id)
+        self.specialization = specialization
+
+    def doctor_details(self):
+        self.display_details()
+        print("Specialization:", self.specialization)
+
+
+class Nurse(HospitalStaff):
+
+    def __init__(self, name, staff_id, shift):
+        super().__init__(name, staff_id)
+        self.shift = shift
+
+    def nurse_details(self):
+        self.display_details()
+        print("Shift:", self.shift)
+
+
+class Receptionist(HospitalStaff):
+
+    def __init__(self, name, staff_id, department):
+        super().__init__(name, staff_id)
+        self.department = department
+
+    def receptionist_details(self):
+        self.display_details()
+        print("Department:", self.department)
+
+
+doctor1 = Doctor("Satya", 201, "Cardiology")
+nurse1 = Nurse("Sunanda", 202, "Night")
+receptionist1 = Receptionist("Mahanvi", 203, "Front Office")
+
+print("Doctor Details")
+doctor1.doctor_details()
+
+print("\nNurse Details")
+nurse1.nurse_details()
+
+print("\nReceptionist Details")
+receptionist1.receptionist_details()
